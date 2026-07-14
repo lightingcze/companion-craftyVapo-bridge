@@ -1,0 +1,44 @@
+{
+  "$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
+  "type": "connection",
+  "id": "crafty-bridge",
+  "name": "Crafty Bridge",
+  "shortname": "Crafty+",
+  "description": "Bitfocus Companion module for Storz & Bickel Crafty devices via Crafty Bridge",
+  "version": "0.1.15",
+  "license": "MIT",
+  "repository": "https://github.com/lightingcze/companion-craftyVapo-bridge",
+  "bugs": "https://github.com/lightingcze/companion-craftyVapo-bridge/issues",
+  "maintainers": [
+    {
+      "name": "Ondra"
+    }
+  ],
+  "runtime": {
+    "type": "node22",
+    "api": "nodejs-ipc",
+    "apiVersion": "2.0.4",
+    "entrypoint": "../src/main.js",
+    "permissions": {
+      "child-process": false,
+      "filesystem": false,
+      "native-addons": false,
+      "worker-threads": false,
+      "insecure-algorithms": false
+    }
+  },
+  "legacyIds": [],
+  "manufacturer": "Storz & Bickel",
+  "products": [
+    "Crafty",
+    "Crafty+"
+  ],
+  "keywords": [
+    "crafty",
+    "crafty-plus",
+    "storz",
+    "bickel",
+    "ble",
+    "vaporizer"
+  ]
+}

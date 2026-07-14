@@ -1,0 +1,8 @@
+node_modules/
+.npm-cache/
+pkg/
+release-inspect-*/
+tools/release-inspect-*/
+*.tgz
+*.log
+*.csv

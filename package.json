@@ -1,0 +1,35 @@
+{
+  "name": "companion-module-crafty-bridge",
+  "version": "0.1.15",
+  "description": "Bitfocus Companion module for Storz & Bickel Crafty devices via Crafty Bridge",
+  "main": "./src/main.js",
+  "private": true,
+  "files": [
+    "LICENSE",
+    "README.md",
+    "build-config.cjs",
+    "companion",
+    "src",
+    "tools"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "lint": "node --check src/main.js",
+    "repo:stage": "node tools/create-public-repo-source.js",
+    "repo:set": "node tools/set-public-repo.js",
+    "release:audit": "node tools/release-audit.js",
+    "release:audit:strict": "node tools/release-audit.js --strict",
+    "release:handoff": "node tools/create-handoff-folder.js",
+    "release:manifest": "node tools/write-release-manifest.js",
+    "package": "companion-module-build"
+  },
+  "dependencies": {
+    "@companion-module/base": "~2.0.4"
+  },
+  "devDependencies": {
+    "@companion-module/tools": "^3.0.1"
+  },
+  "engines": {
+    "node": "^22.20"
+  }
+}
