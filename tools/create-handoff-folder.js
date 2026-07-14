@@ -70,19 +70,22 @@ This folder contains the verified release-candidate handoff bundle.
 - \`RELEASE_MANIFEST.json\`: machine-readable release metadata and hashes.
 - \`SHA256SUMS.txt\`: compact SHA256 checksum list.
 
-## Final Public Submission Step
+## Public Repository
 
-Create the public GitHub repository, unpack the source zip into it, then run:
+Source repository:
+
+${require(path.join(moduleRoot, "companion", "manifest.json")).repository}
+
+To verify the source tree from a fresh clone, run:
 
 \`\`\`powershell
 npm ci
-npm run repo:set -- <github-owner>/companion-module-crafty-bridge
 npm run lint
 npm run release:audit:strict
 npm run package
 \`\`\`
 
-The strict audit should pass only after the real repository URL is set.
+The strict audit must pass before publishing, tagging, or official submission.
 `;
 
 fs.writeFileSync(path.join(handoffDir, "HANDOFF_README.md"), readme);
