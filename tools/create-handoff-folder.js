@@ -66,7 +66,7 @@ This folder contains the verified release-candidate handoff bundle.
 ## Files
 
 - \`companion-module-crafty-bridge-${packageJson.version}-official-rc.tgz\`: import into Bitfocus Companion for local testing.
-- \`companion-module-crafty-bridge-${packageJson.version}-source.zip\`: use as the initial public GitHub repository source.
+- \`companion-module-crafty-bridge-${packageJson.version}-source.zip\`: source snapshot matching the public GitHub repository layout.
 - \`RELEASE_MANIFEST.json\`: machine-readable release metadata and hashes.
 - \`SHA256SUMS.txt\`: compact SHA256 checksum list.
 
