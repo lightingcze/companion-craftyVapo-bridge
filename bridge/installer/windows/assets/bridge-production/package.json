@@ -1,0 +1,17 @@
+{
+  "name": "crafty-companion-winbridge",
+  "version": "0.1.15",
+  "private": true,
+  "description": "Local Windows bridge for Companion to talk to Crafty+",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "stop": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/stop-bridge.ps1",
+    "installer:windows": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/build-windows-installer.ps1",
+    "smoke": "node test/smoke.js",
+    "test": "node test/smoke.js"
+  },
+  "dependencies": {
+    "@abandonware/noble": "^1.9.2-26"
+  }
+}

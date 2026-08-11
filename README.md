@@ -7,6 +7,10 @@ The module is intentionally a Companion-safe HTTP client. It does not spawn
 local shell commands or manage background processes from inside Companion.
 Run the Crafty Bridge service separately, then point this module at it.
 
+This repository also includes the Windows bridge source and installer under
+[`bridge/`](bridge/README.md). Runtime configuration, logs, backups, and local
+release archives are intentionally kept outside the public source tree.
+
 ## Requirements
 
 - Bitfocus Companion v5 or newer.
