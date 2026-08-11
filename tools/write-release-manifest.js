@@ -10,6 +10,7 @@ const companionManifest = require(path.join(moduleRoot, "companion", "manifest.j
 const artifacts = [
   `companion-module-crafty-bridge-${packageJson.version}-official-rc.tgz`,
   `companion-module-crafty-bridge-${packageJson.version}-source.zip`,
+  `crafty-bridge-windows-${packageJson.version}.zip`,
 ];
 
 function sha256(filePath) {
@@ -44,6 +45,7 @@ const releaseManifest = {
   notes: [
     "Runtime tgz is for local Companion import/testing.",
     "Source zip mirrors the public GitHub repository source layout.",
+    "Offline Windows zip installs the bridge, verified portable Node runtime, dependencies, and user autostart.",
     "Strict audit must pass before publishing or submitting the module.",
   ],
 };

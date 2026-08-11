@@ -7,6 +7,10 @@ The module is intentionally a Companion-safe HTTP client. It does not spawn
 local shell commands or manage background processes from inside Companion.
 Run the Crafty Bridge service separately, then point this module at it.
 
+This repository also includes the Windows bridge source and installer under
+[`bridge/`](bridge/README.md). Runtime configuration, logs, backups, and local
+release archives are intentionally kept outside the public source tree.
+
 ## Requirements
 
 - Bitfocus Companion v5 or newer.
@@ -59,18 +63,16 @@ http://127.0.0.1:4587
 
 ## Official Release Notes
 
-This module package is prepared as an official-plugin candidate. Before opening
-a Bitfocus Companion module submission, replace the placeholder `repository`
-and `bugs` URLs in `companion/manifest.json` with the final public GitHub
-repository and issue tracker.
+This module package is prepared as an official-plugin candidate. The public
+repository and issue tracker are configured in `companion/manifest.json`.
+Use `PUBLISHING.md` for release and submission steps.
 
-Use `PUBLISHING.md` and `npm run repo:set -- <owner>/<repo>` for the final
-repository URL step.
-
-## Version 0.1.15
+## Version 0.1.17
 
 - Removed Companion-side local process control for official sandbox compatibility.
 - Removed hardcoded development machine paths from connection settings.
 - Kept bridge control through HTTP API actions only.
+- Fixed the Bridge shutdown preset definition used by the preset structure.
+- Fixed Windows installer upgrades when the bridge is already running.
 - Updated metadata and documentation toward official distribution.
 - Preserved presets, BLE pairing, capsule tracking, dynamic status display, and feedbacks.

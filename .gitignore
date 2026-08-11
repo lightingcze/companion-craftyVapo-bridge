@@ -6,3 +6,11 @@ tools/release-inspect-*/
 *.tgz
 *.log
 *.csv
+*.companionconfig
+*.companiondb
+*.msix
+*.png
+crafty-bridge-config.json
+crafty-session-state.json
+crafty-bridge-windows-*.zip
+*-handoff.zip

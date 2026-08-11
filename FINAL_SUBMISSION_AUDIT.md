@@ -1,6 +1,6 @@
 # Final Submission Audit
 
-Version: 0.1.15
+Version: 0.1.17
 
 ## Objective
 
@@ -41,13 +41,13 @@ npm run release:handoff
 
 ## Generated Release Files
 
-- `companion-module-crafty-bridge-0.1.15-official-rc.tgz`
-- `companion-module-crafty-bridge-0.1.15-source.zip`
-- `crafty-bridge-0.1.15-handoff.zip`
+- `companion-module-crafty-bridge-0.1.17-official-rc.tgz`
+- `companion-module-crafty-bridge-0.1.17-source.zip`
+- `crafty-bridge-0.1.17-handoff.zip`
 - `RELEASE_MANIFEST.json`
 - `SHA256SUMS.txt`
-- `release-handoff-0.1.15`
-- `public-repo-staging-0.1.15`
+- `release-handoff-0.1.17`
+- `public-repo-staging-0.1.17`
 
 ## Remaining External Gate
 

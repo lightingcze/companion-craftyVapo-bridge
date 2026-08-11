@@ -1,8 +1,8 @@
 {
   "name": "companion-module-crafty-bridge",
-  "version": "0.1.15",
+  "version": "0.1.17",
   "description": "Bitfocus Companion module for Storz & Bickel Crafty devices via Crafty Bridge",
-  "main": "./src/main.js",
+  "main": "src/main.js",
   "private": true,
   "files": [
     "LICENSE",
