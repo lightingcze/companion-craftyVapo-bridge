@@ -36,7 +36,7 @@ For development from this source folder:
 3. Install project dependencies:
 
 ```powershell
-cd "C:\Users\ondra\Documents\crafty iphone"
+cd bridge
 npm install
 ```
 

@@ -63,13 +63,9 @@ http://127.0.0.1:4587
 
 ## Official Release Notes
 
-This module package is prepared as an official-plugin candidate. Before opening
-a Bitfocus Companion module submission, replace the placeholder `repository`
-and `bugs` URLs in `companion/manifest.json` with the final public GitHub
-repository and issue tracker.
-
-Use `PUBLISHING.md` and `npm run repo:set -- <owner>/<repo>` for the final
-repository URL step.
+This module package is prepared as an official-plugin candidate. The public
+repository and issue tracker are configured in `companion/manifest.json`.
+Use `PUBLISHING.md` for release and submission steps.
 
 ## Version 0.1.17
 
