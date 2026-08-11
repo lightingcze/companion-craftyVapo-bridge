@@ -5,7 +5,7 @@
   "name": "Crafty Bridge",
   "shortname": "Crafty+",
   "description": "Bitfocus Companion module for Storz & Bickel Crafty devices via Crafty Bridge",
-  "version": "0.1.15",
+  "version": "0.1.17",
   "license": "MIT",
   "repository": "https://github.com/lightingcze/companion-craftyVapo-bridge",
   "bugs": "https://github.com/lightingcze/companion-craftyVapo-bridge/issues",

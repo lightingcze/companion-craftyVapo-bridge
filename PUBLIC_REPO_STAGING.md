@@ -1,6 +1,6 @@
 # Public Repository Staging
 
-Version: 0.1.15
+Version: 0.1.17
 
 This folder is a clean source tree for the public Companion module repository.
 

@@ -1,6 +1,6 @@
 # Crafty Bridge Companion Module Submission Status
 
-Version: 0.1.15
+Version: 0.1.17
 
 ## Package Status
 
@@ -18,12 +18,12 @@ The runtime package is intentionally sandbox-friendly:
 
 ## Generated Artifacts
 
-- `crafty-bridge-0.1.15.tgz`: Companion module runtime package.
-- `companion-module-crafty-bridge-0.1.15-official-rc.tgz`: named copy for local import/testing.
-- `companion-module-crafty-bridge-0.1.15-source.zip`: source package for creating the public repository.
+- `crafty-bridge-0.1.17.tgz`: Companion module runtime package.
+- `companion-module-crafty-bridge-0.1.17-official-rc.tgz`: named copy for local import/testing.
+- `companion-module-crafty-bridge-0.1.17-source.zip`: source package for creating the public repository.
 - `RELEASE_MANIFEST.json`: release metadata and artifact SHA256 hashes.
 - `SHA256SUMS.txt`: compact checksum list for release artifacts.
-- `release-handoff-0.1.15`: verified handoff folder containing artifacts and checksums.
+- `release-handoff-0.1.17`: verified handoff folder containing artifacts and checksums.
 
 ## Repository Support Files
 

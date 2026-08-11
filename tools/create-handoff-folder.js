@@ -67,6 +67,7 @@ This folder contains the verified release-candidate handoff bundle.
 
 - \`companion-module-crafty-bridge-${packageJson.version}-official-rc.tgz\`: import into Bitfocus Companion for local testing.
 - \`companion-module-crafty-bridge-${packageJson.version}-source.zip\`: source snapshot matching the public GitHub repository layout.
+- \`crafty-bridge-windows-${packageJson.version}.zip\`: offline Windows installer with a verified portable Node runtime, BLE dependencies, and automatic startup.
 - \`RELEASE_MANIFEST.json\`: machine-readable release metadata and hashes.
 - \`SHA256SUMS.txt\`: compact SHA256 checksum list.
 
@@ -86,6 +87,13 @@ npm run package
 \`\`\`
 
 The strict audit must pass before publishing, tagging, or official submission.
+
+## Windows End-user Test
+
+1. Extract \`crafty-bridge-windows-${packageJson.version}.zip\` on the target PC.
+2. Double-click \`INSTALL.cmd\`.
+3. Import the included Companion \`.tgz\` module.
+4. Add a \`Crafty Bridge\` connection using \`http://127.0.0.1:4587\`.
 `;
 
 fs.writeFileSync(path.join(handoffDir, "HANDOFF_README.md"), readme);

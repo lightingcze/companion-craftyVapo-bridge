@@ -1027,6 +1027,14 @@ class CraftyBridgeInstance extends InstanceBase {
         actions: [action("forget_known_devices")],
         keywords: ["forget", "known", "devices"],
       }),
+      bridge_shutdown: makePreset({
+        name: "Bridge shutdown",
+        text: "BRIDGE\nSHUTDOWN",
+        size: 12,
+        bgcolor: colors.redDark,
+        actions: [action("bridge_shutdown")],
+        keywords: ["bridge", "shutdown", "service"],
+      }),
       disconnect: makePreset({
         name: "Disconnect",
         text: "DISCONNECT",

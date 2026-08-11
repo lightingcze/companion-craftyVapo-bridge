@@ -12,7 +12,7 @@ Create a public repository for the Companion module source, for example:
 https://github.com/<github-owner>/companion-module-crafty-bridge
 ```
 
-Use the contents of `companion-module-crafty-bridge-0.1.15-source.zip` as the
+Use the contents of `companion-module-crafty-bridge-0.1.17-source.zip` as the
 initial repository source.
 
 You can also generate a clean staging folder directly:
@@ -69,7 +69,7 @@ npm run release:handoff
 Expected output:
 
 ```text
-crafty-bridge-0.1.15.tgz
+crafty-bridge-0.1.17.tgz
 ```
 
 The root workspace release helper also writes:
@@ -77,7 +77,7 @@ The root workspace release helper also writes:
 ```text
 RELEASE_MANIFEST.json
 SHA256SUMS.txt
-release-handoff-0.1.15
+release-handoff-0.1.17
 ```
 
 ## 5. Submit

@@ -67,10 +67,12 @@ repository and issue tracker.
 Use `PUBLISHING.md` and `npm run repo:set -- <owner>/<repo>` for the final
 repository URL step.
 
-## Version 0.1.15
+## Version 0.1.17
 
 - Removed Companion-side local process control for official sandbox compatibility.
 - Removed hardcoded development machine paths from connection settings.
 - Kept bridge control through HTTP API actions only.
+- Fixed the Bridge shutdown preset definition used by the preset structure.
+- Fixed Windows installer upgrades when the bridge is already running.
 - Updated metadata and documentation toward official distribution.
 - Preserved presets, BLE pairing, capsule tracking, dynamic status display, and feedbacks.

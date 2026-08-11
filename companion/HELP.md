@@ -60,8 +60,10 @@ The Presets tab includes ready-made buttons for:
 - capsule/session tracking
 - battery, BLE signal, and bridge health display
 
-## Version 0.1.15
+## Version 0.1.17
 
+- Fixed offline Windows installer upgrades while the bridge is running.
+- Fixed the missing Bridge shutdown preset definition.
 - Companion-safe module packaging with no local shell/process spawning.
 - Cleaner official-plugin metadata and help text.
 - BLE pairing controls stay in Edit Connection and presets.
