@@ -6,7 +6,10 @@ on:
 
 jobs:
   validate:
-    runs-on: windows-latest
+    # @abandonware/noble uses node-gyp; windows-2022 provides the VS 17 toolchain
+    # recognized by the current dependency, while windows-latest may resolve to
+    # a newer Visual Studio version that node-gyp cannot detect yet.
+    runs-on: windows-2022
 
     steps:
       - name: Checkout
