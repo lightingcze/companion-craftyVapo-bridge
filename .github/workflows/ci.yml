@@ -6,7 +6,10 @@ on:
 
 jobs:
   validate:
-    runs-on: windows-latest
+    # @abandonware/noble uses node-gyp; windows-2022 provides the VS 17 toolchain
+    # recognized by the current dependency, while windows-latest may resolve to
+    # a newer Visual Studio version that node-gyp cannot detect yet.
+    runs-on: windows-2022
 
     steps:
       - name: Checkout
@@ -29,3 +32,15 @@ jobs:
 
       - name: Build Companion package
         run: npm run package
+
+      - name: Install bridge dependencies
+        working-directory: bridge
+        run: npm ci
+
+      - name: Check bridge syntax
+        working-directory: bridge
+        run: node --check src/server.js && node --check src/craftyBle.js
+
+      - name: Run bridge smoke test
+        working-directory: bridge
+        run: npm test
